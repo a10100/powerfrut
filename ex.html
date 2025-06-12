@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power Frut</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #ffffff;
+    }
+
+    .capa {
+      background-image: url('capa.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .capa h1 {
+      font-size: 4rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      color: #ff6600;
+    }
+
+    header {
+      background-color: #ff6600;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-nome {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-nome img {
+      height: 80px;
+    }
+
+    .logo-nome h2 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #111;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .produto {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px #ff6600aa;
+      transition: transform 0.3s;
+    }
+
+    .produto:hover {
+      transform: scale(1.05);
+    }
+
+    .produto img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .produto h3,
+    .produto p,
+    .produto .modo-preparo {
+      margin: 10px 0;
+    }
+
+    .modo-preparo {
+      background-color: #222;
+      padding: 10px;
+      text-align: left;
+      border-radius: 5px;
+    }
+
+    .laranja h3, .laranja p, .laranja .modo-preparo { color: orange; }
+    .morango h3, .morango p, .morango .modo-preparo { color: #ff4d79; }
+    .uva h3, .uva p, .uva .modo-preparo { color: #9933cc; }
+    .limão h3, .limão p, .limão .modo-preparo { color: #99ff99; }
+    .manga h3, .manga p, .manga .modo-preparo { color: #ffcc00; }
+    .abacaxi h3, .abacaxi p, .abacaxi .modo-preparo { color: #f1f562; }
+    .maracuja h3, .maracuja p, .maracuja .modo-preparo { color: #ffd700; }
+    .framboesa h3, .framboesa p, .framboesa .modo-preparo { color: #ff3377; }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #eee;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer img {
+      width: 200px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="capa">
+    <h1>Power Frut</h1>
+  </div>
+
+  <header>
+    <div class="logo-nome">
+      <img src="logo.jpg" alt="Logo Power Frut" />
+      <h2><strong>POWER FRUT</strong></h2>
+    </div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#sabores">Sabores</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="container" id="sabores">
+    <!-- Sabores -->
+    <div class="produto laranja">
+      <img src="laranja.jpeg" alt="Suco de Laranja" />
+      <h3>Laranja</h3>
+      <p>Refrescante e cheio de vitamina C. Ideal para começar o dia com energia.</p>
+      <div class="modo-preparo"><strong>Modo de Preparo:</strong> Dissolva 25g em 1 litro de água gelada.</div>
+    </div>
+
+    <div class="produto morango">
+      <img src="morango.jpeg" alt="Suco de Morango" />
+      <h3>Morango</h3>
+      <p>Doce e saboroso. A escolha perfeita para momentos de lazer.</p>
+      <div class="modo-preparo"><strong>Modo de Preparo:</strong> Misture 25g em 1 litro de água fria e bata no liquidificador.</div>
+    </div>
+
+    <div class="produto abacaxi">
+      <img src="abacaxi.jpeg" alt="Suco de Abacaxi" />
+      <h3>Abacaxi</h3>
+      <p>Refrescância natural com um toque tropical. Combina com verão!</p>
+      <div class="modo-preparo"><strong>Modo de Preparo:</strong> Dilua 25g em 1 litro de água gelada.</div>
+    </div>
+
+    <div class="produto uva">
+      <img src="uva.jpeg" alt="Suco de Uva" />
+      <h3>Uva</h3>
+      <p>Intenso e marcante. Ideal para churrascos e encontros familiares.</p>
+      <div class="modo-preparo"><strong>Modo de Preparo:</strong> Misture 25g em 1 litro de água gelada.</div>
+    </div>
+
+    <div class="produto limão">
+      <img src="limão.jpeg" alt="Suco de Limão" />
+      <h3>Limão</h3>
+      <p>Cítrico e refrescante, perfeito com gelo e hortelã.</p>
+      <div class="modo-preparo"><strong>Modo de Preparo:</strong> Misture 25g com 1 litro de água e gelo.</div>
+    </div>
+
+    <div class="produto manga">
+      <img src="manga.jpeg" alt="Suco de Manga" />
+      <h3>Manga</h3>
+      <p>Doçura tropical em cada gole. Ideal para refeições leves.</p>
+      <div class="modo-preparo"><strong>Modo de Preparo:</strong> Misture 25g em 1 litro de água gelada.</div>
+    </div>
+
+    <div class="produto framboesa">
+      <img src="framboesa.jpeg" alt="Suco de Framboesa" />
+      <h3>Framboesa</h3>
+      <p>Sabor sofisticado e marcante. Uma explosão de sabor!</p>
+      <div class="modo-preparo"><strong>Modo de Preparo:</strong> Misture 25g em 1 litro de água bem gelada.</div>
+    </div>
+
+    <div class="produto maracuja">
+      <img src="maracuja.jpeg" alt="Suco de Maracujá" />
+      <h3>Maracujá</h3>
+      <p>Levemente ácido, perfeito para relaxar e refrescar.</p>
+      <div class="modo-preparo"><strong>Modo de Preparo:</strong> Misture 25g em 1 litro de água e gelo.</div>
+    </div>
+  </div>
+
+  <!-- JOGO DA MEMÓRIA -->
+  <section id="jogo-da-memoria" style="padding: 40px 20px; background-color: #111;">
+    <h2 style="text-align: center; color: #ff6600;">Jogo da Memória das Frutas</h2>
+    <div id="game-board" style="display: grid; grid-template-columns: repeat(4, 150px); gap: 13px; justify-content: center; margin-top: 30px;"></div>
+  </section>
+
+ <!-- Substitua a <script> do jogo da memória pelo trecho abaixo -->
+<script>
+  const frutas = [
+    'morango.jpeg',
+    'uva.jpeg',
+    'laranja.jpeg',
+    'limão.jpeg',
+    'manga.jpeg',
+    'maracuja.jpeg',
+    'abacaxi.jpeg',
+    'framboesa.jpeg'
+  ];
+
+  let board = document.getElementById('game-board');
+  let primeira = null;
+  let segunda = null;
+  let travado = false;
+  let paresEncontrados = 0;
+
+  function criarCarta(fruta) {
+    const carta = document.createElement('div');
+    carta.style.width = '150px';
+    carta.style.height = '150px';
+    carta.style.backgroundColor = '#333';
+    carta.style.borderRadius = '10px';
+    carta.style.cursor = 'pointer';
+    carta.style.display = 'flex';
+    carta.style.alignItems = 'center';
+    carta.style.justifyContent = 'center';
+    carta.dataset.fruta = fruta;
+
+    const img = document.createElement('img');
+    img.src = fruta;
+    img.style.width = '100%';
+    img.style.height = '100%';
+    img.style.objectFit = 'cover';
+    img.style.borderRadius = '10px';
+    img.style.display = 'none';
+
+    carta.appendChild(img);
+
+    carta.addEventListener('click', () => {
+      if (travado || carta === primeira || img.style.display === 'block') return;
+
+      img.style.display = 'block';
+
+      if (!primeira) {
+        primeira = carta;
+      } else {
+        segunda = carta;
+        travado = true;
+
+        if (primeira.dataset.fruta === segunda.dataset.fruta) {
+          paresEncontrados++;
+          primeira = null;
+          segunda = null;
+          travado = false;
+
+          if (paresEncontrados === frutas.length) {
+            mostrarMensagemDeVitoria();
+          }
+        } else {
+          setTimeout(() => {
+            primeira.querySelector('img').style.display = 'none';
+            segunda.querySelector('img').style.display = 'none';
+            primeira = null;
+            segunda = null;
+            travado = false;
+          }, 1000);
+        }
+      }
+    });
+
+    return carta;
+  }
+
+  function montarTabuleiro() {
+    board.innerHTML = '';
+    primeira = null;
+    segunda = null;
+    travado = false;
+    paresEncontrados = 0;
+
+    let cartas = [...frutas, ...frutas];
+    cartas.sort(() => 0.5 - Math.random());
+
+    cartas.forEach(fruta => {
+      const carta = criarCarta(fruta);
+      board.appendChild(carta);
+    });
+  }
+
+  function mostrarMensagemDeVitoria() {
+    const mensagem = document.createElement('div');
+    mensagem.style.position = 'fixed';
+    mensagem.style.top = '0';
+    mensagem.style.left = '0';
+    mensagem.style.width = '100%';
+    mensagem.style.height = '100%';
+    mensagem.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+    mensagem.style.display = 'flex';
+    mensagem.style.flexDirection = 'column';
+    mensagem.style.justifyContent = 'center';
+    mensagem.style.alignItems = 'center';
+    mensagem.style.zIndex = '9999';
+
+    const texto = document.createElement('h1');
+    texto.innerText = '🎉 Você ganhou! 🎉';
+    texto.style.color = '#ff6600';
+    texto.style.fontSize = '3rem';
+    texto.style.marginBottom = '20px';
+
+    const logo = document.createElement('img');
+    logo.src = 'logo.jpg';
+    logo.alt = 'Logo Power Frut';
+    logo.style.width = '200px';
+    logo.style.marginBottom = '20px';
+
+    mensagem.appendChild(texto);
+    mensagem.appendChild(logo);
+    document.body.appendChild(mensagem);
+
+    setTimeout(() => {
+      document.body.removeChild(mensagem);
+      montarTabuleiro(); // reinicia o jogo
+    }, 4000);
+  }
+
+  // Inicializa o tabuleiro
+  montarTabuleiro();
+</script>
+
+
+  <footer id="contato">
+    <h2>Fale com a gente!</h2>
+    <p>Quer fazer um pedido, tirar dúvidas ou receber nossas promoções diretamente no seu celular?</p>
+    <p>É fácil! Basta escanear o QR Code abaixo com a câmera do seu celular e fale com a gente pelo WhatsApp ou redes sociais:</p>
+    <img src="qr.jpeg" alt="QR Code de contato" />
+    <p>&copy; 2025 Power Frut. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+
+
